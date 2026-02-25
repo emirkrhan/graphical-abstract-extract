@@ -1,12 +1,14 @@
 {
-  "version": 2,
   "buildCommand": "npx mastra build",
   "functions": {
     ".mastra/output/index.mjs": {
-      "runtime": "nodejs20.x"
+      "maxDuration": 60
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": ".mastra/output/index.mjs" }
+    {
+      "src": "/(.*)",
+      "dest": ".mastra/output/index.mjs"
+    }
   ]
 }
