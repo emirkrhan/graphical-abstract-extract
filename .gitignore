@@ -1,0 +1,4 @@
+node_modules/
+.mastra/
+.DS_Store
+.env
